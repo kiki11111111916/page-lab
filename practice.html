@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f2ede2">
+  <meta name="description" content="页间练习目录：6 道 HTML 与 CSS 小练习，覆盖基础排版、Flexbox、CSS Grid 和视觉细节，每一道都能在代码操场里实时预览。">
+  <title>练习目录 · 页间 PAGE LAB</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body class="catalog-page" data-page="catalog">
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <div class="topbar">
+    <div class="shell topbar-inner">
+      <p><span class="topbar-label">TIP</span> 每道练习都可以先载入参考答案，再关掉它自己重写一遍。</p>
+      <a href="playground.html">直接去操场 <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+
+  <header class="site-header" data-header>
+    <div class="shell header-inner">
+      <a class="brand" href="index.html" aria-label="页间 PAGE LAB 首页">
+        <span class="brand-mark" aria-hidden="true">页</span>
+        <span class="brand-words"><strong>页间</strong><small>PAGE LAB</small></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">打开导航</span>
+        <span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="主导航">
+        <a href="practice.html" aria-current="page">练习目录</a>
+        <a href="playground.html">代码操场</a>
+        <a href="index.html#roadmap">怎么练</a>
+      </nav>
+
+      <a class="header-cta" href="playground.html">
+        打开操场 <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="catalog-hero">
+      <div class="catalog-grid" aria-hidden="true"></div>
+      <div class="shell catalog-hero-inner">
+        <div class="catalog-title">
+          <p class="eyebrow">EXERCISE INDEX / 06</p>
+          <h1>挑一道题，<br><span class="highlight">现在开练。</span></h1>
+        </div>
+        <div class="catalog-aside">
+          <p>从排版到布局，再到一点点视觉魔法。每道题都有清晰的起始代码，不用从空白文件开始，也不会被困住。</p>
+          <div class="difficulty-key" aria-label="难度说明">
+            <span><i class="dot dot-one"></i>入门</span>
+            <span><i class="dot dot-two"></i>进阶</span>
+            <span><i class="dot dot-three"></i>挑战</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog-body" id="catalog">
+      <div class="shell">
+        <div class="catalog-toolbar">
+          <fieldset class="filter-bar">
+            <legend class="sr-only">按类型筛选练习</legend>
+            <input class="filter-radio" type="radio" name="exercise-filter" id="filter-all" value="all" checked>
+            <label for="filter-all">全部 <span>06</span></label>
+            <input class="filter-radio" type="radio" name="exercise-filter" id="filter-basics" value="basics">
+            <label for="filter-basics">基础排版 <span>01</span></label>
+            <input class="filter-radio" type="radio" name="exercise-filter" id="filter-flex" value="flex">
+            <label for="filter-flex">Flexbox <span>02</span></label>
+            <input class="filter-radio" type="radio" name="exercise-filter" id="filter-grid" value="grid">
+            <label for="filter-grid">Grid <span>02</span></label>
+            <input class="filter-radio" type="radio" name="exercise-filter" id="filter-visual" value="visual">
+            <label for="filter-visual">视觉细节 <span>01</span></label>
+          </fieldset>
+          <p class="result-note"><span data-result-count>6</span> 道练习 · 随时开始</p>
+        </div>
+
+        <div class="exercise-grid" id="exercise-grid">
+          <a class="exercise-card" href="playground.html?challenge=card" data-category="basics">
+            <div class="exercise-top">
+              <span class="exercise-no">01</span>
+              <span class="exercise-time">20 MIN</span>
+            </div>
+            <div class="exercise-preview preview-card" aria-hidden="true">
+              <div class="mini-namecard">
+                <span class="mn-eyebrow">INDEPENDENT DESIGNER</span>
+                <strong>林一<span>Lin Yi</span></strong>
+                <span class="mn-role">视觉设计师 / 上海</span>
+                <i class="mn-rule"></i>
+                <span class="mn-mail">hi@linyi.design</span>
+              </div>
+              <span class="preview-sticker">Aa</span>
+            </div>
+            <div class="exercise-body">
+              <div class="exercise-headrow">
+                <h2>把一张名片，排出呼吸感</h2>
+                <span class="level"><i></i><i></i><i class="is-off"></i><span>入门</span></span>
+              </div>
+              <p>用字号、字重和留白，建立清晰的三级文字层级。</p>
+              <div class="tag-row"><span>Typography</span><span>Spacing</span></div>
+            </div>
+            <div class="exercise-foot">
+              <span class="exercise-cat">基础排版</span>
+              <span class="exercise-open">打开练习 <i aria-hidden="true">↗</i></span>
+            </div>
+          </a>
+
+          <a class="exercise-card" href="playground.html?challenge=pricing" data-category="flex">
+            <div class="exercise-top">
+              <span class="exercise-no">02</span>
+              <span class="exercise-time">25 MIN</span>
+            </div>
+            <div class="exercise-preview preview-pricing" aria-hidden="true">
+              <div class="mini-pricing">
+                <div class="mini-plan"><span>LITE</span><strong>¥0</strong><i></i><i></i><b>START</b></div>
+                <div class="mini-plan is-hot"><span>PRO</span><strong>¥39</strong><i></i><i></i><b>CHOOSE</b></div>
+                <div class="mini-plan"><span>TEAM</span><strong>¥99</strong><i></i><i></i><b>START</b></div>
+              </div>
+              <span class="preview-sticker">flex: 1</span>
+            </div>
+            <div class="exercise-body">
+              <div class="exercise-headrow">
+                <h2>三档价格卡，排成一行</h2>
+                <span class="level"><i></i><i></i><i class="is-off"></i><span>入门</span></span>
+              </div>
+              <p>让卡片等宽同高，把按钮稳稳地按在底部。</p>
+              <div class="tag-row"><span>Flexbox</span><span>Alignment</span></div>
+            </div>
+            <div class="exercise-foot">
+              <span class="exercise-cat">Flexbox</span>
+              <span class="exercise-open">打开练习 <i aria-hidden="true">↗</i></span>
+            </div>
+          </a>
+
+          <a class="exercise-card" href="playground.html?challenge=gallery" data-category="grid">
+            <div class="exercise-top">
+              <span class="exercise-no">03</span>
+              <span class="exercise-time">30 MIN</span>
+            </div>
+            <div class="exercise-preview preview-gallery" aria-hidden="true">
+              <div class="mini-gallery">
+                <span class="mg mg-a">MORNING</span>
+                <span class="mg mg-b"></span>
+                <span class="mg mg-c">07:24</span>
+                <span class="mg mg-d"></span>
+                <span class="mg mg-e"></span>
+              </div>
+              <span class="preview-sticker">span 2</span>
+            </div>
+            <div class="exercise-body">
+              <div class="exercise-headrow">
+                <h2>用 Grid，拼一本周末相册</h2>
+                <span class="level"><i></i><i></i><i></i><span>进阶</span></span>
+              </div>
+              <p>让照片跨越行列，在规整里做一点不规整。</p>
+              <div class="tag-row"><span>CSS Grid</span><span>Span</span></div>
+            </div>
+            <div class="exercise-foot">
+              <span class="exercise-cat">Grid</span>
+              <span class="exercise-open">打开练习 <i aria-hidden="true">↗</i></span>
+            </div>
+          </a>
+
+          <a class="exercise-card" href="playground.html?challenge=button" data-category="visual">
+            <div class="exercise-top">
+              <span class="exercise-no">04</span>
+              <span class="exercise-time">18 MIN</span>
+            </div>
+            <div class="exercise-preview preview-button" aria-hidden="true">
+              <div class="mini-stage">
+                <span class="mb-kicker">HOVER TO FEEL</span>
+                <span class="mini-button">开始创作 <i>↗</i></span>
+                <span class="mb-note">transition: 260ms;</span>
+              </div>
+              <span class="preview-sticker">✳</span>
+            </div>
+            <div class="exercise-body">
+              <div class="exercise-headrow">
+                <h2>做一枚会回应的按钮</h2>
+                <span class="level"><i></i><i></i><i class="is-off"></i><span>入门</span></span>
+              </div>
+              <p>用渐变、位移和一层光，让 hover 有恰到好处的反馈。</p>
+              <div class="tag-row"><span>Gradient</span><span>Transition</span></div>
+            </div>
+            <div class="exercise-foot">
+              <span class="exercise-cat">视觉细节</span>
+              <span class="exercise-open">打开练习 <i aria-hidden="true">↗</i></span>
+            </div>
+          </a>
+
+          <a class="exercise-card" href="playground.html?challenge=sidebar" data-category="flex">
+            <div class="exercise-top">
+              <span class="exercise-no">05</span>
+              <span class="exercise-time">28 MIN</span>
+            </div>
+            <div class="exercise-preview preview-sidebar" aria-hidden="true">
+              <div class="mini-app">
+                <div class="ma-side">
+                  <span class="ma-logo">P.</span>
+                  <span class="ma-link is-active">Overview</span>
+                  <span class="ma-link">Projects</span>
+                  <span class="ma-link">Notes</span>
+                  <span class="ma-user"></span>
+                </div>
+                <div class="ma-main">
+                  <span class="ma-kicker">DASHBOARD</span>
+                  <strong>Good<br>morning.</strong>
+                  <span class="ma-bar"></span>
+                  <span class="ma-bar short"></span>
+                  <span class="ma-chip"></span>
+                </div>
+              </div>
+              <span class="preview-sticker">margin-top: auto</span>
+            </div>
+            <div class="exercise-body">
+              <div class="exercise-headrow">
+                <h2>搭一个不塌的侧边栏</h2>
+                <span class="level"><i></i><i></i><i></i><span>进阶</span></span>
+              </div>
+              <p>两栏、满高、底部对齐，这些都可以交给 Flexbox。</p>
+              <div class="tag-row"><span>Flexbox</span><span>Layout</span></div>
+            </div>
+            <div class="exercise-foot">
+              <span class="exercise-cat">Flexbox</span>
+              <span class="exercise-open">打开练习 <i aria-hidden="true">↗</i></span>
+            </div>
+          </a>
+
+          <a class="exercise-card" href="playground.html?challenge=poster" data-category="grid">
+            <div class="exercise-top">
+              <span class="exercise-no">06</span>
+              <span class="exercise-time">35 MIN</span>
+            </div>
+            <div class="exercise-preview preview-poster" aria-hidden="true">
+              <div class="mini-poster">
+                <span class="mp-kicker">PAGE LAB / 2026</span>
+                <strong>MAKE<br><em>ROOM</em></strong>
+                <span class="mp-orb"></span>
+                <span class="mp-foot">08.11 — 08.31</span>
+              </div>
+              <span class="preview-sticker">clamp()</span>
+            </div>
+            <div class="exercise-body">
+              <div class="exercise-headrow">
+                <h2>做一张会呼吸的海报</h2>
+                <span class="level"><i></i><i></i><i></i><span>挑战</span></span>
+              </div>
+              <p>用叠层、渐变和可控的字号，把文字变成画面。</p>
+              <div class="tag-row"><span>Layering</span><span>clamp()</span></div>
+            </div>
+            <div class="exercise-foot">
+              <span class="exercise-cat">Grid</span>
+              <span class="exercise-open">打开练习 <i aria-hidden="true">↗</i></span>
+            </div>
+          </a>
+        </div>
+
+        <div class="catalog-footer">
+          <div>
+            <p class="eyebrow">STUCK? THAT'S NORMAL.</p>
+            <p>卡住的时候，先打开参考答案，只读注释，不急着复制。看懂一层，再自己写下一层。</p>
+          </div>
+          <a class="text-link" href="playground.html">进代码操场自由练习 <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <a class="brand brand-footer" href="index.html" aria-label="页间 PAGE LAB 首页">
+        <span class="brand-mark" aria-hidden="true">页</span>
+        <span class="brand-words"><strong>页间</strong><small>PAGE LAB</small></span>
+      </a>
+      <p>6 道练习，4 个方向。<br>慢慢来，比较快。</p>
+      <nav aria-label="页脚导航">
+        <a href="practice.html">练习目录</a>
+        <a href="playground.html">代码操场</a>
+        <a href="index.html">回到首页</a>
+      </nav>
+      <p class="footer-meta">© 2026 PAGE LAB<br>MADE WITH HTML &amp; CSS</p>
+    </div>
+  </footer>
+</body>
+</html>
