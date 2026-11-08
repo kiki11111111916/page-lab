@@ -22,6 +22,16 @@ python -m http.server 8000
 
 然后访问 <http://127.0.0.1:8000/>。
 
+## 应用图标与 Favicon
+
+![应用图标与 Favicon](assets/icons/icon-preview.png)
+
+- 提供 SVG、16 / 32 / 48 像素 PNG 与多尺寸 `favicon.ico`
+- 180px Apple Touch Icon，适合保存到 iPhone / iPad 主屏幕
+- 192px / 512px PWA 图标与独立的 Maskable 图标
+- `site.webmanifest` 配置了应用名称、主题色、启动路径和快捷入口
+- 图标采用深墨底色、米色纸页、青柠折角与橙红圆点，延续网站视觉
+
 ## 三个页面
 
 | 页面 | 内容 |
@@ -49,7 +59,11 @@ page-lab/
 ├─ playground.html         # 代码操场
 ├─ styles.css              # 全站样式与响应式规则
 ├─ app.js                  # 导航、筛选、实时编辑器
+├─ site.webmanifest        # PWA 应用信息与图标
+├─ favicon.ico             # 传统浏览器图标
 ├─ favicon.svg
+├─ assets/
+│  └─ icons/               # SVG、PNG、Apple Touch、Maskable 图标
 ├─ preview/                # 页面预览截图
 └─ README.md
 ```

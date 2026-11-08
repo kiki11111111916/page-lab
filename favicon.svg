@@ -1,7 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#1c1f18"/>
-  <path d="M18 14h22l8 8v28H18z" fill="#f2ede2"/>
-  <path d="M40 14v9h8" fill="none" stroke="#1c1f18" stroke-width="3"/>
-  <path d="M25 30h16M25 37h16M25 44h10" stroke="#1c1f18" stroke-width="2.6" stroke-linecap="round"/>
-  <circle cx="49" cy="15" r="6" fill="#ff7448"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">页间 PAGE LAB 图标</title>
+  <desc id="desc">深色圆角方块上的一张米色纸页，带青柠色折角和橙红色圆点。</desc>
+  <defs>
+    <radialGradient id="bg" cx="24%" cy="12%" r="112%">
+      <stop offset="0" stop-color="#39412f"/>
+      <stop offset="0.58" stop-color="#1c1f18"/>
+      <stop offset="1" stop-color="#11140e"/>
+    </radialGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fffdf8"/>
+      <stop offset="0.62" stop-color="#f4eddc"/>
+      <stop offset="1" stop-color="#e5dbc6"/>
+    </linearGradient>
+    <linearGradient id="limeFold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ecff9a"/>
+      <stop offset="1" stop-color="#c8f52d"/>
+    </linearGradient>
+    <clipPath id="round">
+      <rect width="512" height="512" rx="112"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#round)">
+    <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+    <rect x="14" y="14" width="484" height="484" rx="99" fill="none" stroke="#f2ede2" stroke-opacity="0.08" stroke-width="2"/>
+    <circle cx="84" cy="78" r="150" fill="#dcff63" opacity="0.07"/>
+
+    <g transform="rotate(-6 256 260)">
+      <path d="M152 92h174l78 78v230c0 20-16 36-36 36H152c-20 0-36-16-36-36V128c0-20 16-36 36-36Z" fill="#c9bea7" opacity="0.35" transform="translate(0 10)"/>
+      <path d="M152 92h174l78 78v230c0 20-16 36-36 36H152c-20 0-36-16-36-36V128c0-20 16-36 36-36Z" fill="url(#paper)" stroke="#1c1f18" stroke-width="12" stroke-linejoin="round"/>
+      <path d="M326 92v68c0 8 6 14 14 14h64Z" fill="url(#limeFold)" stroke="#1c1f18" stroke-width="12" stroke-linejoin="round"/>
+      <rect x="162" y="230" width="174" height="20" rx="10" fill="#1c1f18"/>
+      <rect x="162" y="276" width="126" height="14" rx="7" fill="#1c1f18" opacity="0.55"/>
+      <rect x="162" y="314" width="92" height="14" rx="7" fill="#1c1f18" opacity="0.3"/>
+      <rect x="162" y="364" width="118" height="12" rx="6" fill="#ff7448"/>
+    </g>
+
+    <circle cx="400" cy="374" r="56" fill="#ff7448" stroke="#1c1f18" stroke-width="12"/>
+    <circle cx="400" cy="374" r="19" fill="#f8f4ea"/>
+  </g>
 </svg>
