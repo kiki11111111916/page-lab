@@ -62,6 +62,7 @@ page-lab/
 ├─ site.webmanifest        # PWA 应用信息与图标
 ├─ favicon.ico             # 传统浏览器图标
 ├─ favicon.svg
+├─ _headers                # Netlify 响应头（manifest 类型与缓存）
 ├─ assets/
 │  └─ icons/               # SVG、PNG、Apple Touch、Maskable 图标
 ├─ preview/                # 页面预览截图
