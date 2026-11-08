@@ -10,6 +10,8 @@
 
 长期托管在 Netlify，已开启 HTTPS，无需登录即可访问。
 
+GitHub 仓库：<https://github.com/kiki11111111916/page-lab>
+
 ## 立即开始
 
 直接双击 `index.html` 即可。也可以在当前目录启动一个本地服务器：
